@@ -1,15 +1,15 @@
-package logdur_test
+package timer_test
 
 import (
-	"github.com/kr/logdur"
+	"github.com/kr/log/timer"
 )
 
 func ExampleTimer_Print() {
-	defer logdur.Start().Print()
+	defer timer.Start().Print()
 	// time-consuming code
 }
 
 func ExampleTimer_Printf() {
-	defer logdur.Start().Printf("%.2f", .9999)
+	defer timer.Start().Printf("%.2f", .9999)
 	// time-consuming code
 }

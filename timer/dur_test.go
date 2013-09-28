@@ -1,4 +1,4 @@
-package logdur
+package timer
 
 import (
 	"testing"

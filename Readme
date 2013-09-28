@@ -25,4 +25,5 @@ package timer
 
     Output is formatted with package text/template.
 
-
+All of the good ideas in this package came from
+@fabiokung, @bmizerany, and @davecheney.

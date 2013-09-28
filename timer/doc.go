@@ -10,6 +10,17 @@ prints the time elapsed between the call to Start (when the
 defer statement executes) and the call to Print (when the
 function returns).
 
+It can also be used, without defer, to log elapsed time
+to more than one point. The sequence
+
+  t := timer.Start()
+  // time-consuming code
+  t.Print("first part")
+  // more time-consuming code
+  t.Print("total")
+
+prints the cumulative time from Start to each Print.
+
 Output is formatted with package text/template.
 
 */
